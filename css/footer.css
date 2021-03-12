@@ -1,0 +1,25 @@
+h3{
+  font-size: 20px;
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 0px;
+  font-weight: 500;
+  line-height: 2.7;
+  letter-spacing: 0.8px;
+}
+footer {
+  height: 200px;
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  bottom: 5px;
+  background-color: black;
+  z-index: 5;
+}
+footer h3 {
+  display: inline-block;
+  font-size: 17px;
+  background-color: black;
+}

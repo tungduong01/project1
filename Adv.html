@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="test/js">
+    function hide_float_right() {
+        var content = document.getElementById('float_content_right');
+        var hide = document.getElementById('hide_float_right');
+        if (content.style.display == "none")
+        {content.style.display = "block"; hide.innerHTML  }
+            else { content.style.display = "none"; hide.innerHTML ;
+        }}
+    </script>
+    <style>
+    .float-ck { position: fixed; bottom: 0px; z-index: 9000}
+    * html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+    #float_content_right {border: 1px solid #01AEF0;}
+    #hide_float_right {text-align:right; font-size: 10px;}
+    #hide_float_right a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+    </style>
+    <div class="float-ck" style="right: 0px" >
+    <div id="hide_float_right">
+    <a href="javascript:hide_float_right()">Tắt Quảng Cáo [X]</a></div>
+    <div id="float_content_right">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySj8Y2RMBI68JTBC-DF0t6WwhFsccGeNKu6YySZt59lhm9Hk5yg&s"
+    <!-- End quang cao -->
+    </div>
+    </div>
+
+</html>

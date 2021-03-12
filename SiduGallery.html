@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+  <a href="HomePage2.html" style="text-decoration:none;"><h3 style="color: black;"><i class="fas fa-home"></i><i class="fas fa-angle-double-left"></i>  Back to home</h3></a>
+  <div class="search-container" style="margin-left: 500px;">
+    <form class="form-inline my-2 my-lg-0">
+      <a href="LangkawiGallery.html" style="text-decoration:none; float:right;"><h3 style="color: black;font-size:27px;">Next <i class="fas fa-angle-right"></i></h3></a>
+    </form>
+  </div>
+
+<div style="text-align:center">
+  <h2>Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://i.pinimg.com/originals/b8/e3/f4/b8e3f40c11748793855ddf0cd0a62ab9.jpg" alt="Sidu River Bridge, China" style="width:100%;height: 310px;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://external-preview.redd.it/7NM_s0DCaKGIsAfh5Em6bdz6hNnps7l8vnGHvHPaqx4.jpg?auto=webp&s=9400e0fe4873d0ab2285c20783e6fa9a49a881d5" alt="Sidu River Bridge, China" style="width:100%;height: 310px;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.dangerousroads.org/images/stories/__Roads00000aq/Sidu%20River%20Bridge0.jpg" alt="Sidu River Bridge, China" style="width:100%;height: 310px;" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://www.chinadaily.com.cn/china/images/attachement/jpg/site1/20170405/b083fe96fac21a4e97bd10.jpg" alt="Sidu River Bridge, China" style="width:100%;height: 310px;" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%;height:700px;">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+    <script src="https://kit.fontawesome.com/1d7a824463.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

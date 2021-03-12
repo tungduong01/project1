@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COMMENTS</title>
+    <link rel="stylesheet" href="C:\Users\minhr\OneDrive\Máy tính\comment\css\comments.css"/>
+  </head>
+  <body>
+    <div class='form'>
+      Comment: <textarea rows="5" name="NoiDung" col="30" id="bodyText"{
+        font-size:15px;
+        height :85px;
+        width: 500px;}
+    ></textarea><br/><br/>
+      <button type="button" onclick="myFunction()">SenD</button>
+      </div>
+      <div id="comment">
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+    </div>
+      <script>
+      function myFunction() {
+  var x,y,z,text1,text2,text3;
+  z=document.getElementById("bodyText").value;
+    text3 = z;
+   document.getElementById("demo3").innerHTML = text3;
+}
+    </script>
+  </body>
+</html>
