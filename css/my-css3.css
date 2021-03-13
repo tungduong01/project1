@@ -21,7 +21,7 @@ body {
   font-variant-caps: all-petite-caps;
   text-align: center;
   margin-top: 90px;
-  border: 1px solid;
+  border: 1px solid #a1a1a1;
   border-radius: 22px;
   background: rgb(231, 231, 231);
   box-shadow: 0 19px 38px rgba(0,0,0,0.30),
